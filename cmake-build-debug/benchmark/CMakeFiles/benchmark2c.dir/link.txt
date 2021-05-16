@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/benchmark2c.dir/benchmark2c.cpp.o -o benchmark2c  -l2c -lbenchmark -lbenchmark_main -fopenmp 

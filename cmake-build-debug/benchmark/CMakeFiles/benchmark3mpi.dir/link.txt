@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/benchmark3mpi.dir/benchmark3mpi.cpp.o -o benchmark3mpi  -Wl,-rpath,/usr/local/lib ../src/lib3mpi.a -lbenchmark /usr/local/lib/libmpi.so -fopenmp 

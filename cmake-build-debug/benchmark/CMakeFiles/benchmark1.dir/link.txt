@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/benchmark1.dir/benchmark1.cpp.o -o benchmark1  -l1 -lbenchmark -lbenchmark_main -ltbb -lpthread -fopenmp 

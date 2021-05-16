@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="parallel_benchmark"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\benchmark\;CMake Files\src\;CMake Files\test\;CMake Files\benchmark\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/lib3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3/fast">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/lib3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3mpi">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/lib3mpi.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 3mpi"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3mpi/fast">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/lib3mpi.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 3mpi/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mpi.test">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/mpi.test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 mpi.test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mpi.test/fast">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/mpi.test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 mpi.test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="all.test">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/all.test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 all.test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="all.test/fast">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/all.test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 all.test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark3mpi">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/benchmark3mpi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 benchmark3mpi"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark3mpi/fast">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/benchmark3mpi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 benchmark3mpi/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark3">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/benchmark3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 benchmark3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark3/fast">
+				<Option output="/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/benchmark3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/marcin/CLionProjects/prir-project/src"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 benchmark3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcin/CLionProjects/prir-project/cmake-build-debug/benchmark/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/benchmark/benchmark3.cpp">
+			<Option target="benchmark3"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/benchmark/benchmark3mpi.cpp">
+			<Option target="benchmark3mpi"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/src/3/c/mpi_.c">
+			<Option target="3mpi"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/src/3/c/mpi_.h">
+			<Option target="3mpi"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/src/3/c/openmp_.c">
+			<Option target="3"/>
+			<Option target="3mpi"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/src/3/c/openmp_.h">
+			<Option target="3"/>
+			<Option target="3mpi"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/src/3/c/serial_.c">
+			<Option target="3"/>
+			<Option target="3mpi"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/src/3/c/serial_.h">
+			<Option target="3"/>
+			<Option target="3mpi"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/test/mpi_test.cpp">
+			<Option target="mpi.test"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/test/test_all.cpp">
+			<Option target="all.test"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/../../../../usr/local/lib/cmake/benchmark/benchmarkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\benchmark\"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/../../../../usr/local/lib/cmake/benchmark/benchmarkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\benchmark\"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/../../../../usr/local/lib/cmake/benchmark/benchmarkTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\benchmark\"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/../../../../usr/local/lib/cmake/benchmark/benchmarkTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\benchmark\"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="/home/marcin/CLionProjects/prir-project/benchmark/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmark\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

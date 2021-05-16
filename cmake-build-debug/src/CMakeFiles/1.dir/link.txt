@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib1.a CMakeFiles/1.dir/1/c/serial_.c.o CMakeFiles/1.dir/1/c/openmp_.c.o CMakeFiles/1.dir/1/c/pthread_.c.o CMakeFiles/1.dir/1/cpp/serial_.cpp.o CMakeFiles/1.dir/1/cpp/std_.cpp.o CMakeFiles/1.dir/1/cpp/tbb_.cpp.o
+/usr/bin/ranlib lib1.a

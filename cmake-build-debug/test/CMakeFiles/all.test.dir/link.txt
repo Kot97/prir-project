@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/all.test.dir/test_all.cpp.o -o all.test  -l1 -l2c -l2cpp ../src/lib3.a -lgtest -ltbb -lpthread -fopenmp 

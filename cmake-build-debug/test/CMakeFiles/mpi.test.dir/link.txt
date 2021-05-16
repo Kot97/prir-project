@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/mpi.test.dir/mpi_test.cpp.o -o mpi.test  -Wl,-rpath,/usr/local/lib -l1mpi ../src/lib3mpi.a -lgtest -lpthread /usr/local/lib/libmpi.so -fopenmp 

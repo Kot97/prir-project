@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib2c.a CMakeFiles/2c.dir/2/c/serial_.c.o CMakeFiles/2c.dir/2/c/openmp_.c.o
+/usr/bin/ranlib lib2c.a
