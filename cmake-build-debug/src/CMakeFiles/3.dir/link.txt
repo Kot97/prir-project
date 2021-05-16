@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib3.a CMakeFiles/3.dir/3/c/serial_.c.o CMakeFiles/3.dir/3/c/openmp_.c.o
-/usr/bin/ranlib lib3.a

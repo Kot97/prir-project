@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/benchmark2cpp.dir/benchmark2cpp.cpp.o -o benchmark2cpp  -l2cpp -lbenchmark -lbenchmark_main -ltbb -lpthread 

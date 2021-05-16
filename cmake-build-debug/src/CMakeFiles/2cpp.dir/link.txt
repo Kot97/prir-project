@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib2cpp.a CMakeFiles/2cpp.dir/2/cpp/serial_.cpp.o CMakeFiles/2cpp.dir/2/cpp/std_.cpp.o CMakeFiles/2cpp.dir/2/cpp/tbb_.cpp.o
-/usr/bin/ranlib lib2cpp.a

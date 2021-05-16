@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib1mpi.a CMakeFiles/1mpi.dir/1/c/serial_.c.o CMakeFiles/1mpi.dir/1/c/openmp_.c.o CMakeFiles/1mpi.dir/1/c/mpi_.c.o
-/usr/bin/ranlib lib1mpi.a

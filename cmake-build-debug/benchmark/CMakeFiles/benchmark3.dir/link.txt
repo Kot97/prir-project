@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/benchmark3.dir/benchmark3.cpp.o -o benchmark3  -Wl,-rpath,/usr/local/lib ../src/lib3.a -lbenchmark -lbenchmark_main -ltbb /usr/local/lib/libmpi.so -lpthread -fopenmp 

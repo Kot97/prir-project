@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib3mpi.a CMakeFiles/3mpi.dir/3/c/serial_.c.o CMakeFiles/3mpi.dir/3/c/openmp_.c.o CMakeFiles/3mpi.dir/3/c/mpi_.c.o
-/usr/bin/ranlib lib3mpi.a

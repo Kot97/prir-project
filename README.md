@@ -1,14 +1,6 @@
-Benchmark of parallel models:  
-    C: pthreads, OpenMP, MPI  
-    C++: thread standard library, Intel TBB  
+Simplified benchmark for PK project based on my old project: https://github.com/Kot97/parallel_benchmark
 
-Problems:  
-    1. Vector element-wise multiplication  
-    2. N-th Fibonacci number:  
-        a. Recursive  
-        b. Recursive with cache  
-        c. Iterative  
-    3. Finding maximum value in vector  
+Problem: Finding maximum value in vector  
 
 Project structure:  
     /src/task/model/ - contain solutions of problems in C and C++  
