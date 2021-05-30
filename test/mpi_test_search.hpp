@@ -1,10 +1,8 @@
-#ifndef PARALLEL_BENCHMARK_C_MPI_TEST_SEARCH_HPP
-#define PARALLEL_BENCHMARK_C_MPI_TEST_SEARCH_HPP
+#pragma once
 
 #include <gtest/gtest.h>
 #include <vector>
-#include <3/c/mpi_.h>
-// #include "../src/3/c/mpi_.h"
+#include <mpi_.h>
 
 class MpiSearchTest : public ::testing::TestWithParam<
                 std::pair<std::vector<double>, double>>
@@ -46,5 +44,3 @@ TEST_P(MpiSearchTest, test_name)\
     if(rank == 0) ASSERT_DOUBLE_EQ(*max, GetParam().second);\
     free(max);\
 }
-
-#endif // !1PARALLEL_BENCHMARK_MPI_TEST_SEARCH_HPP

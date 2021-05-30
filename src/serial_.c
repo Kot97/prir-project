@@ -1,6 +1,6 @@
 #include "serial_.h"
 
-double c3_serial(const double *a, const double *b)
+double serial(const double *a, const double *b)
 {
     if(a == b) return *a;
     double max = *a;

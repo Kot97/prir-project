@@ -1,11 +1,10 @@
 #include "parameters3.hpp"
-// #include "../src/3/c/mpi_.h"
-#include <3/c/mpi_.h>
+#include <mpi_.h>
 
 // mpirun benchmark1mpi --benchmark_out="../../data/1/benchmark1mpi.json" --benchmark_out_format=json --benchmark_report_aggregates_only=true
 
-MPI_BENCHMARK_SEARCH(BM_mpi, c3_mpi)
-MPI_BENCHMARK_SEARCH(BM_mpi_openmp, c3_mpi_openmp)
+MPI_BENCHMARK_SEARCH(BM_mpi, mpi)
+MPI_BENCHMARK_SEARCH(BM_mpi_openmp, mpi_openmp)
 
 class NullReporter : public ::benchmark::BenchmarkReporter 
 {

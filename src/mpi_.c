@@ -1,6 +1,6 @@
 #include "mpi_.h"
 
-void _c3_mpi_rank0(const MPI_Comm comm, double *max, const double *a, const double *b)
+void _mpi_rank0(const MPI_Comm comm, double *max, const double *a, const double *b)
 {
     int num;
     MPI_Comm_size(comm, &num);
@@ -16,7 +16,7 @@ void _c3_mpi_rank0(const MPI_Comm comm, double *max, const double *a, const doub
         MPI_Isend(a_, inc, MPI_DOUBLE, i, 0, comm, temp);
 
     MPI_Isend(a_, inc + rest, MPI_DOUBLE, num-1, 0, comm, temp);
-    *max = c3_serial(a, a + inc);
+    *max = serial(a, a + inc);
     
     MPI_Waitall(num-1, req, MPI_STATUS_IGNORE);
 
@@ -24,7 +24,7 @@ void _c3_mpi_rank0(const MPI_Comm comm, double *max, const double *a, const doub
     free(req);
 }
 
-void _c3_mpi_others(const MPI_Comm comm)
+void _mpi_others(const MPI_Comm comm)
 {
     int size;
     MPI_Status stat;
@@ -34,12 +34,12 @@ void _c3_mpi_others(const MPI_Comm comm)
     double *a = (double*)malloc(sizeof(double)*size);
     MPI_Recv(a, size, MPI_DOUBLE, 0, 0, comm, MPI_STATUS_IGNORE);
 
-    double max = c3_serial(a, a + size);
+    double max = serial(a, a + size);
     MPI_Reduce(&max, &max, 1, MPI_DOUBLE, MPI_MAX, 0, comm);
     free(a);
 }
 
-void c3_mpi(const MPI_Comm comm, double *max, const double *a, const double *b)
+void mpi(const MPI_Comm comm, double *max, const double *a, const double *b)
 {
     int rank;
     MPI_Comm_rank(comm, &rank);
@@ -47,14 +47,14 @@ void c3_mpi(const MPI_Comm comm, double *max, const double *a, const double *b)
 
     if(size < CUTOFF3)
     {
-        if(rank == 0) *max = c3_serial(a, b);
+        if(rank == 0) *max = serial(a, b);
         return;
     }
-    if(rank == 0) _c3_mpi_rank0(comm, max, a, b);
-    else _c3_mpi_others(comm);
+    if(rank == 0) _mpi_rank0(comm, max, a, b);
+    else _mpi_others(comm);
 }
 
-void _c3_mpi_rank0_openmp(const MPI_Comm comm, double *max, const double *a, const double *b)
+void _mpi_rank0_openmp(const MPI_Comm comm, double *max, const double *a, const double *b)
 {
     int num;
     MPI_Comm_size(comm, &num);
@@ -70,7 +70,7 @@ void _c3_mpi_rank0_openmp(const MPI_Comm comm, double *max, const double *a, con
         MPI_Isend(a_, inc, MPI_DOUBLE, i, 0, comm, temp);
 
     MPI_Isend(a_, inc + rest, MPI_DOUBLE, num-1, 0, comm, temp);
-    *max = c3_openmp_parallel_for(a, a + inc);
+    *max = openmp_parallel_for(a, a + inc);
     
     MPI_Waitall(num-1, req, MPI_STATUS_IGNORE);
 
@@ -78,7 +78,7 @@ void _c3_mpi_rank0_openmp(const MPI_Comm comm, double *max, const double *a, con
     free(req);
 }
 
-void _c3_mpi_others_openmp(const MPI_Comm comm)
+void _mpi_others_openmp(const MPI_Comm comm)
 {
     int size;
     MPI_Status stat;
@@ -88,12 +88,12 @@ void _c3_mpi_others_openmp(const MPI_Comm comm)
     double *a = (double*)malloc(sizeof(double)*size);
     MPI_Recv(a, size, MPI_DOUBLE, 0, 0, comm, MPI_STATUS_IGNORE);
 
-    double max = c3_openmp_parallel_for(a, a + size);
+    double max = openmp_parallel_for(a, a + size);
     MPI_Reduce(&max, &max, 1, MPI_DOUBLE, MPI_MAX, 0, comm);
     free(a);
 }
 
-void c3_mpi_openmp(const MPI_Comm comm, double *max, const double *a, const double *b)
+void mpi_openmp(const MPI_Comm comm, double *max, const double *a, const double *b)
 {
     int rank;
     MPI_Comm_rank(comm, &rank);
@@ -101,9 +101,9 @@ void c3_mpi_openmp(const MPI_Comm comm, double *max, const double *a, const doub
 
     if(size < CUTOFF3)
     {
-        if(rank == 0) *max = c3_serial(a, b);
+        if(rank == 0) *max = serial(a, b);
         return;
     }
-    if(rank == 0) _c3_mpi_rank0_openmp(comm, max, a, b);
-    else _c3_mpi_others_openmp(comm);
+    if(rank == 0) _mpi_rank0_openmp(comm, max, a, b);
+    else _mpi_others_openmp(comm);
 }

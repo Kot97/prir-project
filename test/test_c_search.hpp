@@ -1,14 +1,9 @@
-#ifndef PARALLEL_BENCHMARK_TEST_C_SEARCH
-#define PARALLEL_BENCHMARK_TEST_C_SEARCH
+#pragma once
 
-// #include "../src/3/c/serial_.h"
-// #include "../src/3/c/openmp_.h"
-#include <3/c/serial_.h>
-#include <3/c/openmp_.h>
+#include <serial_.h>
+#include <openmp_.h>
 #include "test_search.hpp"
 
-TEST_SEARCH(Serial, c3_serial)
-TEST_SEARCH(OpenmpFor, c3_openmp_parallel_for)
-TEST_SEARCH(OpenmpTask, c3_openmp_task)
-
-#endif
+TEST_SEARCH(Serial, serial)
+TEST_SEARCH(OpenmpFor, openmp_parallel_for)
+TEST_SEARCH(OpenmpTask, openmp_task)

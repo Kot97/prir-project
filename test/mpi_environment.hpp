@@ -1,5 +1,4 @@
-#ifndef PARALLE_BENCHMARK_TEST_MPI_ENVIRONMENT
-#define PARALLE_BENCHMARK_TEST_MPI_ENVIRONMENT
+#pragma once
 
 #include <gtest/gtest.h>
 #include <mpi.h>
@@ -21,5 +20,3 @@ public:
     }
     virtual ~MPIEnvironment() {}
 };
-
-#endif // !1PARALLE_BENCHMARK_TEST_MPI_ENVIRONMENT

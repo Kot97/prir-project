@@ -1,5 +1,4 @@
-#ifndef PARALLEL_BENCHMARK_BENCHMARK_PARAMETERS_2_HPP
-#define PARALLEL_BENCHMARK_BENCHMARK_PARAMETERS_2_HPP
+#pragma once
 
 #include "spec.hpp"
 #include <benchmark/benchmark.h>
@@ -65,5 +64,3 @@ static void benchmark_name(benchmark::State& state) \
     }\
 }\
 BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num);
-
-#endif
