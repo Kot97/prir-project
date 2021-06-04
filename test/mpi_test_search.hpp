@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 #include <vector>
-#include <mpi_.h>
+#include "../src/mpi_.h"
 
 class MpiSearchTest : public ::testing::TestWithParam<
                 std::pair<std::vector<double>, double>>
@@ -39,6 +39,17 @@ TEST_P(MpiSearchTest, test_name)\
 {\
     double *max = (double*)malloc(sizeof(double));\
     function_name(comm, max, a, b);\
+    int rank;\
+    MPI_Comm_rank(comm, &rank);\
+    if(rank == 0) ASSERT_DOUBLE_EQ(*max, GetParam().second);\
+    free(max);\
+}
+
+#define C_MPI_TEST_SEARCH_OPENMP(test_name, function_name)\
+TEST_P(MpiSearchTest, test_name)\
+{\
+    double *max = (double*)malloc(sizeof(double));\
+    function_name(comm, max, a, b, 2);\
     int rank;\
     MPI_Comm_rank(comm, &rank);\
     if(rank == 0) ASSERT_DOUBLE_EQ(*max, GetParam().second);\

@@ -5,5 +5,4 @@
 #include "test_search.hpp"
 
 TEST_SEARCH(Serial, serial)
-TEST_SEARCH(OpenmpFor, openmp_parallel_for)
-TEST_SEARCH(OpenmpTask, openmp_task)
+TEST_SEARCH_OPENMP(OpenmpFor, openmp_parallel_for)

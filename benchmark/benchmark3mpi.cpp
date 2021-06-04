@@ -4,7 +4,12 @@
 // mpirun benchmark1mpi --benchmark_out="../../data/1/benchmark1mpi.json" --benchmark_out_format=json --benchmark_report_aggregates_only=true
 
 MPI_BENCHMARK_SEARCH(BM_mpi, mpi)
-MPI_BENCHMARK_SEARCH(BM_mpi_openmp, mpi_openmp)
+MPI_BENCHMARK_SEARCH_OPENMP(BM_mpi_openmp_1, mpi_openmp, 1)
+MPI_BENCHMARK_SEARCH_OPENMP(BM_mpi_openmp_2, mpi_openmp, 2)
+MPI_BENCHMARK_SEARCH_OPENMP(BM_mpi_openmp_3, mpi_openmp, 3)
+MPI_BENCHMARK_SEARCH_OPENMP(BM_mpi_openmp_4, mpi_openmp, 4)
+MPI_BENCHMARK_SEARCH_OPENMP(BM_mpi_openmp_5, mpi_openmp, 5)
+MPI_BENCHMARK_SEARCH_OPENMP(BM_mpi_openmp_6, mpi_openmp, 6)
 
 class NullReporter : public ::benchmark::BenchmarkReporter 
 {

@@ -37,3 +37,12 @@ TEST_P(SearchTest, test_name)\
 {\
     ASSERT_DOUBLE_EQ(function_name(a, b), GetParam().second);\
 }
+
+#define TEST_SEARCH_OPENMP(test_name, function_name)\
+TEST_P(SearchTest, test_name)\
+{\
+    ASSERT_DOUBLE_EQ(function_name(a, b, 1), GetParam().second);\
+    ASSERT_DOUBLE_EQ(function_name(a, b, 2), GetParam().second);\
+    ASSERT_DOUBLE_EQ(function_name(a, b, 3), GetParam().second);\
+    ASSERT_DOUBLE_EQ(function_name(a, b, 4), GetParam().second);\
+}
