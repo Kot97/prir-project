@@ -1,6 +1,5 @@
 #pragma once
 
-#include "spec.hpp"
 #include <benchmark/benchmark.h>
 #include <cstdlib>
 
