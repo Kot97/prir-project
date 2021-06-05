@@ -3,12 +3,12 @@
 #include <benchmark/benchmark.h>
 #include <cstdlib>
 
-constexpr int max = 100000000;
-constexpr int run_num = 5;
+constexpr unsigned long min = 10000000;
+constexpr unsigned long max = 1000000000;
+constexpr unsigned long multiplier = 10;
 
-constexpr int multiplier = 10;
-constexpr int min = 10;
-constexpr auto unit = benchmark::kMicrosecond;
+constexpr int run_num = 20;
+constexpr auto unit = benchmark::kMillisecond;
 
 #define BENCHMARK_SEARCH(benchmark_name, function_name) \
 static void benchmark_name(benchmark::State& state) \
@@ -25,7 +25,8 @@ static void benchmark_name(benchmark::State& state) \
         state.ResumeTiming();\
     }\
 }\
-BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num);
+BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num)\
+->DisplayAggregatesOnly(true);
 
 #define BENCHMARK_SEARCH_OPENMP(benchmark_name, function_name, thread_count) \
 static void benchmark_name(benchmark::State& state) \
@@ -42,7 +43,8 @@ static void benchmark_name(benchmark::State& state) \
         state.ResumeTiming();\
     }\
 }\
-BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num);
+BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num)\
+->DisplayAggregatesOnly(true);
 
 #define MPI_BENCHMARK_SEARCH(benchmark_name, function_name) \
 static void benchmark_name(benchmark::State& state) \
@@ -61,7 +63,8 @@ static void benchmark_name(benchmark::State& state) \
         state.ResumeTiming();\
     }\
 }\
-BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num);
+BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num)\
+->DisplayAggregatesOnly(true);
 
 #define MPI_BENCHMARK_SEARCH_OPENMP(benchmark_name, function_name, thread_count) \
 static void benchmark_name(benchmark::State& state) \
@@ -80,4 +83,5 @@ static void benchmark_name(benchmark::State& state) \
         state.ResumeTiming();\
     }\
 }\
-BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num);
+BENCHMARK(benchmark_name)->RangeMultiplier(multiplier)->Range(min, max)->Unit(unit)->UseRealTime()->Repetitions(run_num)\
+->DisplayAggregatesOnly(true);
