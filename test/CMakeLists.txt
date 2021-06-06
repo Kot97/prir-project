@@ -3,7 +3,7 @@ find_package(MPI REQUIRED)
 include(GoogleTest)
 
 add_executable( all.test test_all.cpp )
-target_link_libraries( all.test 3 -lgtest )
+target_link_libraries( all.test 3 -lgtest -lpthread -fopenmp )
 
 add_test(NAME all COMMAND all.test)
 
