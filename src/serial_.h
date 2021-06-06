@@ -1,7 +1,5 @@
 #pragma once
 
-#include "cutoffs.h"
-
 #ifdef __cplusplus
 extern "C" {
 #endif

@@ -45,11 +45,6 @@ void mpi(const MPI_Comm comm, double *max, const double *a, const double *b)
     MPI_Comm_rank(comm, &rank);
     const unsigned long size = b - a;
 
-    if(size < CUTOFF3)
-    {
-        if(rank == 0) *max = serial(a, b);
-        return;
-    }
     if(rank == 0) _mpi_rank0(comm, max, a, b);
     else _mpi_others(comm);
 }
@@ -71,7 +66,7 @@ void _mpi_rank0_openmp(const MPI_Comm comm, double *max, const double *a, const 
 
     MPI_Isend(a_, inc + rest, MPI_DOUBLE, num-1, 0, comm, temp);
     *max = openmp_parallel_for(a, a + inc, thread_count);
-    
+
     MPI_Waitall(num-1, req, MPI_STATUS_IGNORE);
 
     MPI_Reduce(MPI_IN_PLACE, max, 1, MPI_DOUBLE, MPI_MAX, 0, comm);
@@ -99,11 +94,6 @@ void mpi_openmp(const MPI_Comm comm, double *max, const double *a, const double 
     MPI_Comm_rank(comm, &rank);
     const unsigned long size = b - a;
 
-    if(size < CUTOFF3)
-    {
-        if(rank == 0) *max = serial(a, b);
-        return;
-    }
     if(rank == 0) _mpi_rank0_openmp(comm, max, a, b, thread_count);
     else _mpi_others_openmp(comm, thread_count);
 }
