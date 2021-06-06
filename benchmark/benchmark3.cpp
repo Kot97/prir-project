@@ -1,8 +1,9 @@
 #include "parameters3.hpp"
-#include <serial_.h>
-#include <openmp_.h>
+#include "../src/serial_.h"
+#include "../src/openmp_.h"
 
-// ./benchmark3 --benchmark_out="../../data/x/benchmark3.json" --benchmark_out_format=json --benchmark_report_aggregates_only=true
+// clang++ -o benchmark3 benchmark3.cpp ../src/serial_.c ../src/openmp_.c -lpthread -fopenmp -lbenchmark -lbenchmark_main
+// ./benchmark3
 
 BENCHMARK_SEARCH(BM_c_serial, serial)
 BENCHMARK_SEARCH_OPENMP(BM_openmp_for_1, openmp_parallel_for, 1)
